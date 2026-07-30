@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title> Shree Akshaya Portfolio </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+
+    <body>
+        <div id="header">
+
+            <div class="container">
+
+                
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <ul id="mobile-menu">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-content">
+
+                    <div class="header-text">
+                        <h1>Hi, I'm Shree Akshaya</h1>
+
+                        <h2>Robotics & AI Student</h2>
+
+                        <p>
+                            I build software, intelligent systems, and robotics
+                            projects that solve real-world problems.
+                        </p>
+                    </div>
+
+                    <div class="header-image">
+                        <img src="images/Formal_image.png" alt="Shree">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+<!-- -------- About ------- -->
+        <div id="about">
+            <div class="container">
+                
+
+                <h1 class="sub-title">About Me</h1>
+
+                <div class="about-grid">
+
+                    <!-- Left side -->
+                    <div class="about-box reveal">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I’m a Robotics & AI undergraduate passionate about software
+                            development, intelligent systems, and building technology
+                            that solves real-world problems.
+                        </p>
+
+                        <h3>Education</h3>
+                        <p>
+                            B.Tech in Robotics & Artificial Intelligence
+                            <br>
+                            Amrita Vishwa Vidyapeetham, Bengaluru
+                        </p>
+                    </div>
+
+                    <!-- Center photo -->
+                    <div class="about-image reveal">
+                        <img src="images/aboutme.jpeg" alt="Shree Akshaya">
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="about-box reveal">
+                        <h3>Current Focus</h3>
+                        <p>
+                            Python, C++,C, OpenCV, and robotics
+                            software projects that combine AI with practical engineering.
+                        </p>
+
+                        <h3>Career Goal</h3>
+                        <p>
+                            To build intelligent robotics and AI systems that create
+                            meaningful real-world impact through software and automation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Quick highlights -->
+                <div class="about-highlights">
+
+                    <div class="highlight">
+                        <h2>2nd Year</h2>
+                        <p>Robotics & AI</p>
+                    </div>
+
+                    <div class="highlight">
+                        <h2>Python • C++</h2>
+                        <p>Core Technologies</p>
+                    </div>
+
+                    <div class="highlight">
+                        <h2>AI • Robotics</h2>
+                        <p>Current Focus</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!---Projects------------------>
+        <div id="projects">
+            <div class="container reveal">
+
+                <h1 class="sub-title">Projects</h1>
+
+                <div class="project-card">
+
+                    <h2>🚧 Coming Soon</h2>
+
+                    <p>
+                        I'm currently working on exciting Robotics & AI projects.
+                        Soon you'll find projects on computer vision, web development,
+                        embedded systems, AI and robotics here.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!----------- Certification ----->
+        <div id="certificates">
+            <div class="container reveal">
+
+                <h1 class="sub-title">Certificates</h1>
+
+                <div class="certificate-list">
+
+                    <div class="certificate">
+                        <img src="images/certificate1.jpg" alt="Certificate">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!------Contact----->
+        <div id="contact">
+            <div class="container reveal">
+
+                <h1 class="sub-title">Contact Me</h1>
+
+                <p class="contact-description">
+                    Have a project, internship opportunity, or collaboration in mind?
+                    Feel free to reach out.
+                </p>
+
+                <div class="contact-card">
+
+                    <form action="https://formspree.io/f/xojgboka" method="POST">
+
+                        <label>Your name</label>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+
+                        <label>Your email</label>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+
+                        <label>Your message</label>
+                        <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+                        <button type="submit" class="btn btn2">Send message</button>
+
+                    </form>
+
+                </div>
+
+                <div class="contact-socials">
+
+                    <a href="https://www.linkedin.com/in/shree-akshaya-p-524175387/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/Shree08Akshaya" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="mailto:shreeakshaya.08@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+    <div class="copyright">
+        <p>Copyright © Shree Akshaya. All rights reserved.</p>
+    </div>
+</div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname)
+            {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+        </script>
+        <script>
+        function toggleMenu(){
+            document.getElementById("mobile-menu").classList.toggle("show");
+        }
+        </script>
+        <script>
+        const revealElements = document.querySelectorAll(".reveal");
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("active");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        },{
+            threshold: 0.15
+        });
+
+        revealElements.forEach(element => {
+            revealObserver.observe(element);
+        });
+        </script>
+    </body>
+</html>
